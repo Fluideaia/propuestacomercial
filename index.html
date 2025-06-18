@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Propuesta Comercial Fluidea</title>
+  <style>
+    body { font-family: Poppins, sans-serif; margin:0; padding:0; background:#000;}
+    .container { max-width:800px; margin:2rem auto; background:#111; color:#fff; padding:2rem; border-radius:8px; }
+    .logo { text-align:center; margin-bottom:1rem; }
+    .logo img { height:60px; }
+    h1 { color:#00BFA6; text-align:center; }
+    /* …aquí tus estilos personalizados… */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://raw.githubusercontent.com/Fluideaia/propuestacomercial/main/assets/logo-fluidea.png" alt="Fluidea Logo" />
+    </div>
+    <h1>Propuesta Comercial</h1>
+    <p>Aquí va tu contenido, tablas, imágenes, etc.</p>
+    <!-- Hooks para insertar dinámicamente datos desde n8n -->
+    <ul>
+      <li>Email: {{ $json.body.email }}</li>
+      <li>Empresa: {{ $json.body.empresa }}</li>
+      <!-- …etc… -->
+    </ul>
+  </div>
+</body>
+</html>
